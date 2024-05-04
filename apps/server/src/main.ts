@@ -7,6 +7,6 @@ async function bootstrap() {
   app.enableCors();
   const trpc = app.get(TrpcRouter);
   trpc.applyMiddleware(app);
-  await app.listen(process.env.PORT || 8080);
+  await app.listen(process.env.PORT ? parseInt(process.env.PORT) : 8080);
 }
 bootstrap();
