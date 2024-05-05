@@ -17,4 +17,5 @@ NEXT_PUBLIC_NESTJS_SERVER=[server URL (example: http://localhost:8080)]
 
 ```
 PORT=[server port (example: 8080)]
+DATABASE_URL=[database url (example: "postgresql://postgres.[username]:[password][url]")]
 ```
