@@ -1,4 +1,7 @@
 {
+  "dependencies": {
+    "@nestjs/mapped-types": "*"
+  },
   "name": "nextjs-nestjs-trpc",
   "version": "1.0.0",
   "description": "",
@@ -7,6 +10,7 @@
     "dev": "pnpm run --parallel dev",
     "gen-client": "pnpm --filter web gen-client",
     "migrate": "pnpm --filter server migrate",
+    "migrate:reset": "pnpm --filter server migrate:reset",
     "build:server": "pnpm --filter server build",
     "build:web": "pnpm --filter web build",
     "start:server": "pnpm --filter server start:prod",
