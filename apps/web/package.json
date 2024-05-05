@@ -6,21 +6,26 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "openapi-ts": "openapi-ts",
+    "gen-client": "openapi-ts --input http://localhost:8080/api-json --output ./client --client axios"
   },
   "dependencies": {
     "@trpc/client": "^10.45.2",
     "@trpc/server": "^10.45.2",
+    "axios": "^1.6.8",
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18"
   },
   "devDependencies": {
+    "@hey-api/openapi-ts": "^0.43.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.2.3",
+    "openapi-typescript-codegen": "^0.29.0",
     "typescript": "^5"
   }
 }
